@@ -1,0 +1,21 @@
+<div class="row m-0">
+    <div class="col-2">
+        <ul class="list-group">
+            <li class="list-group-item" routerLink="dashboard" routerLinkActive="active">
+                <!-- <a routerLink="dashboard" routerLinkActive="active"> -->
+                    Dashboard
+                <!-- </a> -->
+            </li>
+            <li class="list-group-item" routerLink="template-form" routerLinkActive="active">
+                Template Form
+            </li>
+            <li class="list-group-item" (click)="logout()" routerLinkActive="active">
+                Logout
+            </li>
+          </ul>
+      
+    </div>
+    <div class="col-10">
+        <router-outlet/>
+    </div>
+</div>
