@@ -8,5 +8,6 @@ import { provideToastr } from 'ngx-toastr';
 import { httpInterceptor } from './services/http.interceptor';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes),provideZoneChangeDetection({eventCoalescing: true}), provideHttpClient(withInterceptors([httpInterceptor])),provideAnimations(), provideToastr()]
+  providers: [provideRouter(routes),provideZoneChangeDetection({eventCoalescing: true})
+    ,provideHttpClient(withInterceptors([httpInterceptor])),provideAnimations(), provideToastr()]
 };

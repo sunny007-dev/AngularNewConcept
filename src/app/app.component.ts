@@ -5,7 +5,7 @@ import { NotificationService } from './services/notification.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet ],
+  imports: [RouterOutlet],
   providers:[NotificationService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
